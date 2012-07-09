@@ -1,0 +1,26 @@
+<html>
+<head>
+	
+</head>
+<body>
+	<div style="width:600px;margin-top:20px;margin-left:auto;margin-right:auto">	
+		<button id="move">Next Move</button>
+		<button id="play">Play</button>
+		
+		<span style="float:right">
+			<button id="newRandomBoard">New Random Board</button>
+			<button id="newEmptyBoard">Clear Board</button>
+		</span>
+	</div>
+	<div style="width:600px;margin-top:50px;margin-left:auto;margin-right:auto">
+		<canvas id="canvas" width="600" height="600" style="background-color:LightGrey">
+		</canvas>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<script>
+		GameOfLife.render("#canvas");
+	</script>
+</body>
+</html>
